@@ -1,0 +1,8 @@
+---
+import {createPublicPageContext} from 'emdash/page';
+import {EmDashHead} from 'emdash/ui';
+import {ClientRouter} from 'astro:transitions';
+const page = createPublicPageContext({Astro,kind:'custom',title:'HitKeep fixture'});
+const missing = ['/missing-head','/consent'].includes(Astro.url.pathname);
+---
+<html lang="en"><head><title>HitKeep fixture</title><ClientRouter />{!missing && <EmDashHead page={page} />}</head><body><h1>HitKeep fixture</h1><a href="/de/second">Next page</a><slot /></body></html>

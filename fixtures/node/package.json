@@ -1,0 +1,18 @@
+{
+  "name": "hitkeep-emdash-node-fixture",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "astro build",
+    "dev": "astro dev"
+  },
+  "dependencies": {
+    "@astrojs/node": "11.1.9",
+    "@astrojs/react": "7.1.0",
+    "@hitkeep/emdash": "file:../../hitkeep-emdash-0.1.0.tgz",
+    "astro": "7.4.1",
+    "emdash": "1.3.1",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  }
+}

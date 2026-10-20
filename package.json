@@ -1,0 +1,51 @@
+{
+  "name": "@hitkeep/emdash",
+  "version": "0.1.0",
+  "description": "Native EmDash settings and page fragment for the existing HitKeep tracker",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test tests/*.test.mjs",
+    "test:hosts": "node tests/hosts.mjs",
+    "prepack": "npm run build"
+  },
+  "keywords": [],
+  "type": "module",
+  "devDependencies": {
+    "@astrojs/cloudflare": "14.4.1",
+    "@astrojs/node": "11.1.9",
+    "@astrojs/react": "7.1.0",
+    "@emdash-cms/cloudflare": "1.3.1",
+    "@types/node": "26.6.5",
+    "astro": "7.4.1",
+    "emdash": "1.3.1",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "typescript": "7.0.2"
+  },
+  "license": "MIT",
+  "private": true,
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./plugin": {
+      "types": "./dist/plugin.d.ts",
+      "import": "./dist/plugin.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=22.16"
+  },
+  "peerDependencies": {
+    "emdash": "1.3.1"
+  }
+}
