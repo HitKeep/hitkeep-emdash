@@ -2,7 +2,7 @@
 
 Native source candidate that adds HitKeep's existing asynchronous `hk.js` tracker through EmDash's generated settings and `EmDashHead`. Disabled until an administrator enables it. No credentials, analytics backend, dashboard or tracker copy are included.
 
-Source is available at [PascaleBeier/hitkeep-emdash](https://github.com/PascaleBeier/hitkeep-emdash). `@hitkeep/emdash` is the local manifest name; the npm package remains private and unpublished, and npm scope ownership and availability have not been verified. It is **not** an EmDash sandboxed registry plugin: executable page fragments require trusted native installation.
+Source is available at [HitKeep/hitkeep-emdash](https://github.com/HitKeep/hitkeep-emdash). `@hitkeep/emdash` is the local manifest name; the npm package remains private and unpublished, and npm scope ownership and availability have not been verified. It is **not** an EmDash sandboxed registry plugin: executable page fragments require trusted native installation.
 
 ## Compatibility
 
@@ -33,7 +33,7 @@ Without this setting, the tested bundler splits Kysely into circularly importing
 Clone the source and build a local artifact (no npm registry installation is available):
 
 ```sh
-git clone https://github.com/PascaleBeier/hitkeep-emdash.git
+git clone https://github.com/HitKeep/hitkeep-emdash.git
 cd hitkeep-emdash
 npm ci
 npm test
